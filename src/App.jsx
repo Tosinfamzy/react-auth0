@@ -11,7 +11,7 @@ function App() {
 			<main>
 				<h1>Auth0 Login</h1>
 				{error && <p>Authentication Error</p>}
-				{!isLoading && (
+				{!error && !isLoading && (
 					<>
 						<LoginButton />
 						<LogoutButton />
